@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Cargo TJ (Behzod)  </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Скрываем все номера по умолчанию */
+    .number {
+      display: none;  /* Скрывает элементы и не занимает место на странице */
+      font-weight: bold;  /* Делаем номера жирными */
+      font-size: 20px;  /* Увеличиваем размер шрифта */
+      color: black;
+      
+    }
+    
+    /* Опционально: стиль для активных номеров, когда они отображаются */
+    .number.displayed {
+      font-size: 20px;  /* Дополнительно можно увеличить размер для отображаемых номеров */
+    }
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <a href="#" class=""><span class="mr-2  icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">cargotj@gmail.com</span></a>
+              <span class="mx-md-2 d-inline-block"></span>
+              <a href="#" class=""><span class="mr-2  icon-phone"></span> <span class="d-none d-md-inline-block">+992 92 614 04 00</span></a>
+
+
+              <div class="float-right">
+
+                <a href="#" class=""><span class="mr-2  icon-telegram"></span> <span class="d-none d-md-inline-block">Telegram</span></a>
+                <span class="mx-md-2 d-inline-block"></span>
+                <a href="#" class=""><span class="mr-2  icon-whatsapp"></span> <span class="d-none d-md-inline-block">WhatsApp</span></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+
+            <div class="site-logo">
+              <a href="index.html" class="text-black"><span class="text-primary">Cargo TJ ( Behzod )</a>
+            </div>
+
+            <div class="col-12">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li><a href="#home-section" class="nav-link">Главная</a></li>
+                  
+
+
+                  <li class="has-children">
+                    <a href="#about-section" class="nav-link"></a>
+                    <ul class="dropdown arrow-top">
+                      <li><a href="#team-section" class="nav-link"></a></li>
+                      <li><a href="#pricing-section" class="nav-link"></a></li>
+                      <li><a href="#faq-section" class="nav-link"></a></li>
+                      <li class="has-children">
+                        <a href="#"></a>
+                        <ul class="dropdown">
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#why-us-section" class="nav-link">Соблюдайте правила</a></li>
+
+                  <li><a href="#contact-section" class="nav-link">Обратная связь</a></li>
+                </ul>
+              </nav>
+
+            </div>
+
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+        </div>
+
+      </header>
+
+      <div class="ftco-blocks-cover-1">
+        <div class="ftco-cover-1 overlay" style="background-image: url('https://source.unsplash.com/pSyfecRCBQA/1920x780')">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h1>Ассаляму алейкум с вами Cargo-Tj (Behzod)</h1>
+                <p class="mb-5">Cрок доставки из Иу до Худжанда 15-20 дней. На счет адрес обрашайтесь к админу. Вы можете проверить свои ТРЕК НОМЕРА тут .</p>
+                <form action="#">
+                  <div class="form-group d-flex">
+                    <input   type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Ведите свой Трек-Номера">
+                    <input   type="submit" class="btn btn-primary text-white px-4" value="Поиск">
+                    <br>
+                   <!-- Список номеров -->
+  <ul id="numberList">
+    <li class="number">9803293685988 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264955763505 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464007645668056 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264977701 455 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT291969160 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264143190952 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78464595647605 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264004144605 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464017497858215 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464019174342439 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464018111193388 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464009323649749 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT 402673274 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464019721838146 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT8721243605056 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264888614951 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264888296996 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264869930143 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT8721243605056 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777265306159542 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264671199005 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78465056286349 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777265021193265 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT51422 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT235793132 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78465211319149 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">9803391921263 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264802442144 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78464799312969 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">08480305 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">9567890037 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">*9865165959 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777265056220669 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78464653594367 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264797558405 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264292449156 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777263985065979 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464010099642089 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">9803337284545 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464009858303111 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464009870562348 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">9803295923446 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464009474768136 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78464876769078 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264611718529 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464009896045277 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">9803312219252 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264783391774 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777265076617097 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">YT301198742 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">78464473399259 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">8227293891010 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">464007501205347 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264766930886 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+<li class="number">777264792272703 <span class="number-message">ПРИНЯТО В СКЛАД ИВУ</span></li>
+  </ul>
+
+  <script>
+    // Функция поиска по номерам
+    function searchFunction() {
+      var input, filter, numbers, li, txtValue;
+      input = document.getElementById('searchInput');
+      filter = input.value.toUpperCase();  // Приводим поисковый запрос к верхнему регистру
+      numbers = document.getElementsByClassName('number');  // Получаем все элементы с классом 'number'
+
+      // Если поле поиска пустое, скрываем все номера
+      if (filter === "") {
+        for (var i = 0; i < numbers.length; i++) {
+          numbers[i].style.display = "none";  // Скрываем все номера, если поисковое поле пустое
+        }
+      } else {
+        // Перебираем все номера и скрываем те, которые не соответствуют поисковому запросу
+        for (var i = 0; i < numbers.length; i++) {
+          li = numbers[i];
+          txtValue = li.textContent || li.innerText;  // Получаем текст внутри <li>
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li.style.display = "block";  // Показываем номер, если он соответствует поиску
+          } else {
+            li.style.display = "none";  // Скрываем номер, если он не соответствует поиску
+          }
+        }
+      }
+    }
+  </script>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END .ftco-cover-1 -->
+        <div class="ftco-service-image-1 pb-5">
+          <div class="container">
+            <div class="owl-carousel owl-all">
+              <div class="service text-center">
+                <a href="#"><img src="images/cargo_sea_small.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="#">Скоростной</a></h3>
+                  <p>Мы доставляем ваши товары в течение 15-20 дней.</p>
+                </div>
+              </div>
+              <div class="service text-center">
+                <a href="#"><img src="images/cargo_air_small.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="#">Cargo-Tj (Behzod)
+                  </a></h3>
+                  <p>Цена за услуги перевозки: Минимальная Цена перевозки до 0,5 кг 2$. Цена за кг 3$</p>
+                </div>
+              </div>
+              <div class="service text-center">
+                <a href="#"><img src="images/cargo_delivery_small.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="#">Безопасный</a></h3>
+                  <p>Ваши товары совершенно безопасен в наших руках.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     
+
+
+
+
+      
+
+
+      
+
+      <div class="block__73694 site-section border-top" id="why-us-section">
+        <div class="container">
+          <div class="row d-flex no-gutters align-items-stretch">
+
+            <div class="col-12 col-lg-6 block__73422 order-lg-2" style="background-image: url('images/cargo_sea_small.jpg');" data-aos="fade-left" data-aos-delay="">
+            </div>
+
+
+
+            <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1" data-aos="fade-right" data-aos-delay="">
+              <h2 class="mb-4 text-black">Соблюдайте правила</h2>
+              <h4 class="text-primary">Список Запрешённых товаров!</h4>
+              <p>Пожалуйства не закажите Запрешённых товаров. Мы за них не отвечаем, соблюдайте  Пожалуйства правилу.</p>
+
+              <ul class="ul-check primary list-unstyled mt-5">
+                <li>Все что принадлежит к холодным оружиям (пневматический оружие, тактические ножи, костет и тд)</li>
+                <li>Химичекое товары</li>
+                <li>Сотовые телефон, запчасти телефонов, накопители, флешки и тд</li>
+                <li>Взрывчатое вещество, зажигалки</li>
+                <li>Медицинские оборудование, разные таблетки</li>
+                <li>Драгоценные камни</li>
+                <li>Сьедобные товары</li>
+                <li>Живые растения</li>
+                <li>Электронная сигареты, никотин, табак</li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      
+
+            
+
+
+            
+
+             
+
+      
+
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+            <div class="block-heading-1">
+              <span>Cargo TJ (Behzod)</span>
+              <h2>Обратная связь</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white p-3 p-md-5">
+              <h3 class="text-black mb-4">Обратная связь</h3>
+              <ul class="list-unstyled footer-link">
+                <li class="d-block mb-3">
+                  <span class="d-block text-black">Адрес:</span>
+                  <span>Чашма </span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+992 92 614 04 00</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>cargotj@gmail.com</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+          
+
+
+            
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p class="copyright">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Создатель Сайта <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://www.instagram.com/bakhtiyor_videographer/profilecard/?igsh=dThmaTA1ZGZ5Mmdo" target="_blank" >Bakhtiyor Sattorov</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+  </body>
+
+</html>
