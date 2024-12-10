@@ -205,6 +205,17 @@ body {
   line-height: 1.7;
   font-weight: 400;
   font-size: 1rem; }
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #d4418e, #0652c5);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
   body:before {
     position: absolute;
     content: "";
